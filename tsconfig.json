@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "experimentalDecorators": true,
+        "noImplicitAny": false
+    },
+    "exclude": ["./dist", "./node_modules"]
+}
