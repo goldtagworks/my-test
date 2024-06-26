@@ -5,12 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "node",
             "request": "launch",
-            "name": "Quasar App: chrome",
-            "enableContentValidation": false,
-            "url": "http://127.0.0.1:9000",
-            "webRoot": "${workspaceFolder}/src"
+            "name": "프로그램 시작",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "program": "${workspaceFolder}\\src\\main.ts",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
         }
     ]
 }
